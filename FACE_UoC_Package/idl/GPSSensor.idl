@@ -1,0 +1,8 @@
+module FACE {
+  interface GPSSensorInput {
+    string readData();
+    boolean isHealthy();
+    void initialize();
+    void shutdown();
+  };
+};

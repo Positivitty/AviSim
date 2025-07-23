@@ -1,0 +1,8 @@
+module AviSim {
+  interface AltSensorInput {
+    string readData();
+    boolean isHealthy();
+    void initialize();
+    void shutdown();
+  };
+};
