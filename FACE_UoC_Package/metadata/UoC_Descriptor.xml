@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UoCDescriptor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xsi:noNamespaceSchemaLocation="UoC_Descriptor.xsd">
+    <UoCName>AviSim</UoCName>
+    <UoCIdentifier>AviSim-PCS-001</UoCIdentifier>
+    <UoCVersion>1.0</UoCVersion>
+    <UoCType>Platform Capability Segment</UoCType>
+    <Vendor>NoahKerrSoftware</Vendor>
+    <FACEVersion>3.2.3</FACEVersion>
+    <ExecutableFile>bin/AltitudeSensor</ExecutableFile>
+    <Description>A modular simulation component that simulates and reports altitude and GPS sensor data in conformance with the FACE Platform Capability Segment architecture.</Description>
+    
+    <InterfaceList>
+        <Interface>
+            <InterfaceName>ISensorInput</InterfaceName>
+            <InterfaceType>PCS Interface</InterfaceType>
+            <IDLFile>FACE_UoC_Package/idl/AltitudeSensor.idl</IDLFile>
+        </Interface>
+        <Interface>
+            <InterfaceName>ISensorInput</InterfaceName>
+            <InterfaceType>PCS Interface</InterfaceType>
+            <IDLFile>FACE_UoC_Package/idl/GPSSensor.idl</IDLFile>
+        </Interface>
+    </InterfaceList>
+
+    <AssociatedFiles>
+        <File>README.md</File>
+        <File>FACE_UoC_Package/metadata/Conformance_Manifest.xml</File>
+    </AssociatedFiles>
+</UoCDescriptor>
